@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/><title>WS scrcpy</title><script defer="defer" src="index.bundle.js"></script><link href="index.css" rel="stylesheet"></head><style>.main {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+    .scrcpy {
+      width: 640px;
+      height: 100vh;
+      /* background-color: #f00; */
+    }
+
+    /* .control {
+      width: 414px;
+      height: 100vh;
+    } */
+
+    #control-button1 {
+      width: 200px;
+      height: 35px;
+    }
+    .btns {
+      width: 35px;
+      height: 500px;
+      background-color: #f2f2f2;
+    }
+
+    .control,
+    .control1 {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 12px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }</style><body><div class="main"><div class="scrcpy" id="scrcpy"></div><div class="btns"><button class="control" title="Power"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="none" d="M0 0h48v48H0z"></path><path d="M26 6h-4v20h4V6zm9.67 4.33l-2.83 2.83C35.98 15.73 38 19.62 38 24c0 7.73-6.27 14-14 14s-14-6.27-14-14c0-4.38 2.02-8.27 5.16-10.84l-2.83-2.83C8.47 13.63 6 18.52 6 24c0 9.94 8.06 18 18 18s18-8.06 18-18c0-5.48-2.47-10.37-6.33-13.67z" fill="var(--svg-button-fill)" stroke="var(--svg-button-fill)"></path></svg></button> <button class="control" title="Volume up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M6 18v12h8l10 10V8L14 18H6zm27 6c0-3.53-2.04-6.58-5-8.05v16.11c2.96-1.48 5-4.53 5-8.06zM28 6.46v4.13c5.78 1.72 10 7.07 10 13.41s-4.22 11.69-10 13.41v4.13c8.01-1.82 14-8.97 14-17.54S36.01 8.28 28 6.46z" fill="var(--svg-button-fill)" stroke="var(--svg-button-fill)"></path><path d="M0 0h48v48H0z" fill="none"></path></svg></button> <button class="control" title="Volume down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M37 24c0-3.53-2.04-6.58-5-8.05v16.11c2.96-1.48 5-4.53 5-8.06zm-27-6v12h8l10 10V8L18 18h-8z" fill="var(--svg-button-fill)" stroke="var(--svg-button-fill)"></path><path d="M0 0h48v48H0z" fill="none"></path></svg></button> <button class="control" title="Back"><svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Artboard-1" sketch:type="MSArtboardGroup"><g id="System_Back" sketch:type="MSLayerGroup"><g id="Page-1" sketch:type="MSShapeGroup"><g id="System_Back"><g id="Rectangle-118-+-back-12-Copy-11"><rect id="Rectangle-118" x="0" y="0" width="48" height="48"></rect><path d="M36.7088473,10.9494765 L36.7088478,37.6349688 C36.7088478,39.4039498 35.4820844,40.0949115 33.9646508,39.1757647 L12.1373795,25.9544497 C10.6218013,25.0364267 10.6199459,23.5491414 12.1373794,22.6299946 L33.9646503,9.40868054 C35.4802284,8.49065763 36.7088473,9.16835511 36.7088473,10.9494765 Z M33.5088482,13.4305237 L33.5088482,35.1305245 L15.5088482,24.2805241 L33.5088482,13.4305237 Z" id="Shape" fill="var(--svg-button-fill)"></path></g></g></g></g></g></g></svg></button> <button class="control" title="Home"><svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="System_Home" sketch:type="MSArtboardGroup"><g id="Rectangle-119-+-home-12-Copy-11" sketch:type="MSLayerGroup"><rect id="Rectangle-119" sketch:type="MSShapeGroup" x="0" y="0" width="48" height="48"></rect><path d="M24,35.2 L24,35.2 C30.1855892,35.2 35.2,30.1855892 35.2,24 C35.2,17.8144108 30.1855892,12.8 24,12.8 C17.8144108,12.8 12.8,17.8144108 12.8,24 C12.8,30.1855892 17.8144108,35.2 24,35.2 L24,35.2 Z M24,38.4 L24,38.4 C16.0470996,38.4 9.6,31.9529004 9.6,24 C9.6,16.0470996 16.0470996,9.6 24,9.6 C31.9529004,9.6 38.4,16.0470996 38.4,24 C38.4,31.9529004 31.9529004,38.4 24,38.4 L24,38.4 Z" id="Shape" fill="var(--svg-button-fill)" sketch:type="MSShapeGroup"></path></g></g></g></svg></button> <button class="control" title="Overview"><svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="System_Overview" sketch:type="MSArtboardGroup"><g id="Rectangle-120-+-recent-12-Copy-11" sketch:type="MSLayerGroup"><rect id="Rectangle-120" sketch:type="MSShapeGroup" x="0" y="0" width="48" height="48"></rect><path d="M12.7921429,12.8 L12.7921429,12.8 C12.7959945,12.8 12.8,12.7959954 12.8,12.7921429 L12.8,35.2078571 C12.8,35.2040055 12.7959954,35.2 12.7921429,35.2 L35.2078571,35.2 C35.2040055,35.2 35.2,35.2040046 35.2,35.2078571 L35.2,12.7921429 C35.2,12.7959945 35.2040046,12.8 35.2078571,12.8 L12.7921429,12.8 Z M12.7921429,9.6 L12.7921429,9.6 L35.2078571,9.6 C36.9718035,9.6 38.4,11.029171 38.4,12.7921429 L38.4,35.2078571 C38.4,36.9718035 36.970829,38.4 35.2078571,38.4 L12.7921429,38.4 C11.0281965,38.4 9.6,36.970829 9.6,35.2078571 L9.6,12.7921429 C9.6,11.0281965 11.029171,9.6 12.7921429,9.6 L12.7921429,9.6 Z" id="Shape" fill="var(--svg-button-fill)" sketch:type="MSShapeGroup"></path></g></g></g></svg></button> <button class="control" title="Take screenshot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="var(--svg-button-fill)"><circle cx="24" cy="24" r="6.4"></circle><path d="M18 4l-3.66 4H8c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4h-6.34L30 4H18zm6 30c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10z"></path><path d="M0 0h48v48H0z" fill="none"></path></svg></button> <input type="checkbox" class="control_input" id="input_capture_keyboard_0.0.0.0:0_H264 Converter"/> <label title="Capture keyboard" class="control1" for="input_capture_keyboard_0.0.0.0:0_H264 Converter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="var(--svg-button-fill)" class="image image-off"><path d="M40 10H8c-2.21 0-3.98 1.79-3.98 4L4 34c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V14c0-2.21-1.79-4-4-4zm-18 6h4v4h-4v-4zm0 6h4v4h-4v-4zm-6-6h4v4h-4v-4zm0 6h4v4h-4v-4zm-2 4h-4v-4h4v4zm0-6h-4v-4h4v4zm18 14H16v-4h16v4zm0-8h-4v-4h4v4zm0-6h-4v-4h4v4zm6 6h-4v-4h4v4zm0-6h-4v-4h4v4z"></path><path d="M0 0h48v48H0zm0 0h48v48H0z" fill="none"></path></svg> ></label></div></div></body></html>
